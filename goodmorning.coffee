@@ -5,8 +5,6 @@
 #   None
 #
 # Configuration:
-#   HUBOT_OWNCLOUD_PATH
-#   HUBOT_OWNCLOUD_BACKUP_PATH
 #
 # Commands:
 #   hubot good morning
@@ -14,3 +12,6 @@
 # Author:
 #   matthew-parlette
 
+module.exports = (robot) ->
+  robot.respond /good ?morning/i, (msg) ->
+    msg.reply "Good morning, sir"
